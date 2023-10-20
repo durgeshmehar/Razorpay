@@ -1,0 +1,38 @@
+.box:hover img{
+	transition: all .3s ease;
+    background: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+}
+.box:hover svg{
+	stroke-opacity: 0 !important;
+	transition: all .3s ease;
+	filter: drop-shadow(0px 0px 9px #e8e8e8) blur(1px);
+}
+
+.exploreBox:hover svg{
+	stroke-opacity: 0 !important;
+	transition: all .3s ease;
+	filter: drop-shadow(0px 0px 8px #191919) blur(1px);
+}
+.box::after{
+	content: "";
+    background-image: url(./Images/wave-blue.svg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 120px;
+	height: 90px;
+    bottom: 10px;
+	scale: 0.8;
+    right: -10px;
+	z-index: 120;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.box:hover::after{
+	opacity:1;
+}
+
+.alldiv > div:not(:first-child){
+	box-shadow:0px 0px 4px 1px rgb(237, 236, 236);
+}
