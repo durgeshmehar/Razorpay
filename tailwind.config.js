@@ -17,7 +17,11 @@ module.exports = {
 			grayBlue: "#344a6c",
 			deepBlueHead: "#162f56",
 			gray2: "#525a76",
-		  },},
+		  },
+		  screens:{
+			'xs':'480px'
+		  }
+		},
 	  },
 	  plugins: [],
 	}
